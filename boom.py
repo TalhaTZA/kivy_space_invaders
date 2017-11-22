@@ -3,8 +3,8 @@ from kivy.core.audio import SoundLoader
 
 
 class Boom(Image):
-    sound=SoundLoader.load('boom.wav')
+    sound=SoundLoader.load('sounds/boom.wav')
     
-    def boom(self,**kwargs):
+    def __init__(self,**kwargs):
         self.__class__.sound.play()
         super().__init__(**kwargs)

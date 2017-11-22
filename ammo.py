@@ -15,7 +15,7 @@ class Ammo(Image):
     def on_start(self,instance,value):
         self.boom=Boom()
         self.boom.center=self.center
-        self.parent.add_widjet(self.boom)
+        self.parent.add_widget(self.boom)
     
     def on_progress(self,instance,value,progression):
         if progression >=.1:
